@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="windowOpen()">window open</button>
+    <button onclick="windowClose()">window close</button>
+    <button onclick="windowMoveTo()">window MoveTo</button>
+    <button onclick="windowResizeTo()">window ResizeTo</button>
+
+
+    <script>
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+
+        console.log(w, h);
+
+        // window.open()
+        function windowOpen() {
+            window.open("https://www.google.com", "_blank");
+        }
+
+        // window.close()
+        function windowClose() {
+            window.close();
+        }
+
+        // windowMoveTo()
+        function windowMoveTo() {
+            window.moveTo(100, 0);
+        }
+        // windowMoveTo()
+        function windowResizeTo() {
+            window.resizeTo(100, 0);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let width = screen.width;
+        let height = screen.height;
+        let availWidth = screen.availWidth;
+        let availHeight = screen.availHeight;
+        let colorDepth = screen.colorDepth;
+        let pixelDepth = screen.pixelDepth;
+
+        document.write(`
+            <h1>Browser Information</h1>
+            <ul>
+                <li>Width: ${width}px</li>
+                <li>Height: ${height}px</li>
+                <li>Available Width: ${availWidth}px</li>
+                <li>Available Height: ${availHeight}px</li>
+                <li>Color Depth: ${colorDepth} bits</li>
+                <li>Pixel Depth: ${pixelDepth} bits</li>
+            </ul>
+        `);
+
+
+    </script>
+
+</body>
+
+</html>

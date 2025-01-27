@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>Click</button>
+    <input type="text">
+    <h2></h2>
+
+
+    <script>
+
+        let button = document.querySelector('button');
+        let title = document.querySelector('h2');
+
+        // Click Event
+        button.addEventListener('click', () => {
+            alert("Click");
+        });
+
+        // Input Event
+        let input = document.querySelector('input');
+        input.addEventListener('input', (e) => {
+            console.log(e.target.value);
+            title.textContent = e.target.value;
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>

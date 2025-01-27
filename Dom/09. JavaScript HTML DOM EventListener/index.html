@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Example</title>
+</head>
+
+<body>
+    <button id="myButton">Click Me</button>
+    <input type="text" id="myInput" placeholder="Type something...">
+
+    <h1 id="id01">My First Page</h1>
+    <p id="id02">Hello!</p>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const input = document.getElementById('myInput');
+
+        // Mouse Event
+        button.addEventListener('click', () => {
+            alert('Button clicked!');
+        });
+
+        // Keyboard Event
+        input.addEventListener('keydown', (e) => {
+            console.log(`Key pressed: ${e.key}`);
+        });
+
+        // Focus Event
+        input.addEventListener('focus', () => {
+            console.log('Input field focused.');
+        });
+
+        // Blur Event
+        input.addEventListener('blur', () => {
+            console.log('Input field lost focus.');
+        });
+
+        console.log(document.getElementById("id01"));
+
+
+
+        document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
+    </script>
+</body>
+
+</html>

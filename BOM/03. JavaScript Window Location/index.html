@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let href = window.location.href;
+        let hostname = window.location.hostname;
+        let pathname = window.location.pathname;
+        let protocol = window.location.protocol;
+        let assign = window.location.assign;
+
+        document.write(`
+
+          <h2>Current URL</h2>
+          <p>${href}</p>
+          <p>${hostname}</p>
+          <p>${pathname}</p>
+          <p>${protocol}</p>
+          <p>${assign}</p>
+
+
+        `)
+    </script>
+</body>
+
+</html>

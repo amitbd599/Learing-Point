@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="title">Hello Dom</h1>
+
+    <div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
+
+
+
+    <script>
+
+        // getElementById
+        var title = document.getElementById("title");
+        console.log(title);
+        console.log(title.innerHTML);
+        console.log(title.innerText);
+        console.log(title.textContent);
+
+        // getElementsByClassName
+        let box = document.getElementsByClassName("box");
+        console.log(box[0]);
+        console.log(box[0].innerHTML);
+        console.log(box[0].innerText);
+        console.log(box[0].textContent);
+
+        // querySelector
+        let box2 = document.querySelector(".box");
+        console.log(box2);
+        console.log(box2.innerHTML);
+        console.log(box2.innerText);
+        console.log(box2.textContent);
+
+        // querySelectorAll()
+        let box3 = document.querySelectorAll(".box");
+        console.log(box3[0].innerHTML);
+        console.log(box3[0].innerText);
+        console.log(box3[0].textContent);
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

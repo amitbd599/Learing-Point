@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="parent">
+        <h2 class="child1">Hello</h2>
+        <h2 class="child2">02</h2>
+        <h2 class="child3">04</h2>
+    </div>
+
+
+    <script>
+
+
+        // Parent Element
+        var child = document.querySelector('.child1');
+        // console.log(child.parentElement);
+
+        // Child Nodes
+        var parent = document.querySelector('.parent');
+        console.log(parent.children);
+
+        // Siblings
+        var child2 = document.querySelector('.child2');
+        console.log(child2.nextElementSibling);
+        console.log(child2.previousElementSibling);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+    <div class="container_2">
+
+    </div>
+    <div class="container_3">
+        <p>Hello 3</p>
+    </div>
+    <div class="container_4">
+        <p>Replace an HTML element</p>
+    </div>
+
+
+
+
+    <script>
+
+        // Add Elements
+        var newElement = document.createElement("div");
+        var container = document.querySelector(".container");
+        newElement.textContent = "New Div Element";
+        container.appendChild(newElement);
+
+        // Add Elements inner html
+        var newElement_2 = document.createElement("div");
+        var container_2 = document.querySelector(".container_2");
+        newElement_2.innerHTML = '<p>Hello inner html</p>';
+        container_2.appendChild(newElement_2);
+
+        // Remove Elements - remove()
+        var element = document.querySelector(".container_2");
+        element.remove();
+
+
+        // Remove Elements - removeChild()
+        var container_3 = document.querySelector(".container_3");
+        var p = document.querySelector("p");
+        container_3.removeChild(p);
+
+
+        // replace Elements - replaceChild()
+        var container_4 = document.querySelector(".container_4");
+        var p = document.querySelector("p");
+        var span = document.createElement('span');
+        span.innerHTML = '<span>Span tag</span>';
+        container_4.appendChild(span);
+        console.log(span);
+
+        container_4.removeChild(p, span);
+
+        // document.write
+        document.write("text10101010101")
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .done {
+            text-decoration: line-through;
+            color: red;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div>
+        <input type="text"> <button>Add</button>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+
+        let input = document.querySelector('input');
+        let addButton = document.querySelector('button');
+        let container = document.querySelector('.container');
+
+        addButton.addEventListener('click', () => {
+            let li = document.createElement('li');
+            li.textContent = input.value;
+
+            // mark as done clicking
+            li.addEventListener('click', function () {
+                li.classList.toggle('done');
+            });
+
+            container.appendChild(li);
+            input.value = '';
+        })
+
+
+    </script>
+
+</body>
+
+</html>

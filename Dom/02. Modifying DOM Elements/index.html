@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="title">Hello Dom</h1>
+    <a href="#">Click Here</a>
+
+    <div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
+
+    <script>
+
+        let title = document.getElementById("title");
+
+        // Change Text Content
+        title.textContent = "Hello user.";
+
+        // Change HTML Content
+        title.innerHTML = "<span style='color: red;'>Hello, user!</span>";
+
+        // Modify Attributes
+        let link = document.querySelector('a');
+        // link.href = "http://localhost"
+        link.setAttribute("href", "http://localhost/db");
+        link.setAttribute("col", "Hey!");
+
+        // Change Styles
+        title.style.backgroundColor = "yellow";
+        title.style.fontSize = "54px";
+
+
+    </script>
+</body>
+
+</html>
