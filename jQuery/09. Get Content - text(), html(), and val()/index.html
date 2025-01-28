@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button>Start</button>
+    <p></p>
+    <input type="text">
+    <a href="#">Link</a>
+
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script>
+
+    /*
+
+    $(selector).action()
+
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+
+    */
+
+    /*
+    Syntax:
+        jQuery slideDown()
+        $(selector).hide(speed,callback);
+
+    */
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            $("p").text("JJJ");
+        });
+    });
+
+
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            console.log($("input").val());
+        });
+    });
+
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            console.log($("a").attr('href', 'google.com'));
+        });
+    })
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button>Start</button>
+
+    <p id="text"></p>
+    <p id="html"></p>
+    <input type="text" id="val">
+    <a href="#">Click</a>
+
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script>
+
+    /*
+
+    $(selector).action()
+
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+
+    */
+
+    /*
+    Syntax:
+        jQuery slideDown()
+        text() - Sets or returns the text content of selected elements
+        html() - Sets or returns the content of selected elements (including HTML markup)
+        val() - Sets or returns the value of form fields
+
+    */
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            $("#text").text("JJJ");
+            $("#html").text("<b>Hello world!</b>");
+            $("#val").val("Dolly Duck");
+        });
+    });
+
+
+    // Set Attributes - attr()
+    $("button").click(function () {
+        $("a").attr("href", "https://www.w3schools.com/jquery/");
+    });
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

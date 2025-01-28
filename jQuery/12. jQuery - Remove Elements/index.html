@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button>click</button>
+
+    <div class="inner">
+        <p id="text" style="background-color: red; height:100px;width:300px;border:1px solid black;">000</p>
+        <p id="text_2" style="background-color: red; height:100px;width:300px;border:1px solid black;">000</p>
+    </div>
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script>
+
+    /*
+
+    $(selector).action()
+
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+
+    */
+
+    /*
+    Syntax:
+        jQuery slideDown()
+        remove() - Removes the selected element (and its child elements)
+        empty() - Removes the child elements from the selected element
+
+    */
+
+
+    // jQuery remove() Method
+    // $(document).ready(function () {
+    //     $("button").click(function () {
+    //         $("#text").remove();
+    //     });
+    // });
+
+    // jQuery empty() Method
+    // $(document).ready(function () {
+    //     $("button").click(function () {
+    //         $("#text").empty();
+    //     });
+    // });
+
+    // Filter the Elements to be Removed
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("p").remove('#text');
+        });
+    });
+
+
+
+
+
+
+
+</script>
+
+</html>
