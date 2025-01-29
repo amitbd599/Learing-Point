@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immutable.js Map Example</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <!-- Import Immutable.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/4.3.1/immutable.js"></script>
+    <script>
+        // Import Immutable.js
+        const { List } = Immutable;
+
+        const people = List([
+            { name: "Alice", age: 25 },
+            { name: "Bob", age: 30 },
+            { name: "Charlie", age: 35 },
+        ]);
+
+
+        const peopleHTML = people.map((person) => {
+            return `<li>${person.name} is ${person.age} years old.</li>`;
+        });
+
+        console.log(peopleHTML.join(""));
+
+
+        app.innerHTML = `
+                        <h1>People</h1>
+                        <ul>
+                            ${peopleHTML.join("")}
+                        </ul>
+                        `;
+
+
+    </script>
+</body>
+
+</html>
